@@ -59,7 +59,7 @@ masterdata <- rbind(training_dataset, test_dataset)
 colNames <- colnames(masterdata)
 mean_std <- (
   grepl("subjectId", colNames) | grepl("activityId", colNames) |
-    grepl("mean\\(\\)", colNames) | grepl("std\\(\\)", colNames)
+    grepl("mean", colNames) | grepl("std\\(\\)", colNames)
 )
 
 # Extract required data on mean and standard deviation
@@ -71,7 +71,7 @@ mstd_data <- masterdata[ , mean_std == TRUE]
 mstd_data = merge(mstd_data, activityLabels, by='activityId', all.x=TRUE)
 
 # reorder columns to start from subjectId, activityName, .....,drop activityId
-mstd_data <- mstd_data[,c(2,69, 3:68)]
+mstd_data <- mstd_data[,c(2,82, 3:81)]
 
 ### 4) Appropriately label the data set with descriptive variable names
 
@@ -82,7 +82,10 @@ varNames <- colnames(mstd_data)
 varNames <- gsub("\\(\\)", "", varNames)
 varNames <- gsub("^f", "frequencyDomain-", varNames)
 varNames <- gsub("^t", "timeDomain-", varNames)
-varNames <- gsub("std", "stdDeviation", varNames)
+varNames <- gsub("std", "StdDeviation", varNames)
+varNames <- gsub("Acc", "Acceleration", varNames)
+varNames <- gsub("Gyro", "Gyroscope", varNames)
+varNames <- gsub("Mag", "Magnitude", varNames)
 varNames <- gsub("BodyBody", "Body", varNames)
 
 # assign descriptive variable names to dataset
