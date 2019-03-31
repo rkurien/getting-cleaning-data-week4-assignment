@@ -47,7 +47,7 @@ tidydata.txt is an independent tidy data set with the average of each variable f
 Feature | Result
 ------------ | -------------
 Number of observations | 180
-Number of variables | 68
+Number of variables | 81
 
 ### Description
 
@@ -66,73 +66,86 @@ The activities performed are as follows:-
 
 Variable | Class
 ------------ | -------------
-**[subjectId]** | integer               
-**[activityName]** | factor     
-**[timeDomain-BodyAcc-mean-X]** | numeric      
-**[timeDomain-BodyAcc-mean-Y]** | numeric      
-**[timeDomain-BodyAcc-mean-Z]** | numeric      
-**[timeDomain-BodyAcc-stdDeviation-X]** | numeric     
-**[timeDomain-BodyAcc-stdDeviation-Y]** | numeric      
-**[timeDomain-BodyAcc-stdDeviation-Z]** | numeric      
-**[timeDomain-GravityAcc-mean-X]**  | numeric      
-**[timeDomain-GravityAcc-mean-Y]**  | numeric      
-**[timeDomain-GravityAcc-mean-Z]**  | numeric      
-**[timeDomain-GravityAcc-stdDeviation-X]**  | numeric      
-**[timeDomain-GravityAcc-stdDeviation-Y]**  | numeric
-**[timeDomain-GravityAcc-stdDeviation-Z]**  | numeric
-**[timeDomain-BodyAccJerk-mean-X]** | numeric
-**[timeDomain-BodyAccJerk-mean-Y]** | numeric
-**[timeDomain-BodyAccJerk-mean-Z]** | numeric
-**[timeDomain-BodyAccJerk-stdDeviation-X]** | numeric
-**[timeDomain-BodyAccJerk-stdDeviation-Y]** |         numeric
-**[timeDomain-BodyAccJerk-stdDeviation-Z]** |         numeric
-**[timeDomain-BodyGyro-mean-X]**  |                   numeric
-**[timeDomain-BodyGyro-mean-Y]**  |                   numeric
-**[timeDomain-BodyGyro-mean-Z]**  |                   numeric 
-**[timeDomain-BodyGyro-stdDeviation-X]**  |           numeric 
-**[timeDomain-BodyGyro-stdDeviation-Y]**  |           numeric
-**[timeDomain-BodyGyro-stdDeviation-Z]**  |           numeric
-**[timeDomain-BodyGyroJerk-mean-X]**  |               numeric
-**[timeDomain-BodyGyroJerk-mean-Y]**  |               numeric
-**[timeDomain-BodyGyroJerk-mean-Z]**  |               numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-X]**  |       numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-Y]**  |       numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-Z]**  |       numeric
-**[timeDomain-BodyAccMag-mean]** |                     numeric
-**[timeDomain-BodyAccMag-stdDeviation]**  |           numeric
-**[timeDomain-GravityAccMag-mean]** |                 numeric
-**[timeDomain-GravityAccMag-stdDeviation]** |         numeric
-**[timeDomain-BodyAccJerkMag-mean]** |               numeric
-**[timeDomain-BodyAccJerkMag-stdDeviation]**  |       numeric
-**[timeDomain-BodyGyroMag-mean]** |                   numeric
-**[timeDomain-BodyGyroMag-stdDeviation]** |           numeric
-**[timeDomain-BodyGyroJerkMag-mean]** |               numeric
-**[timeDomain-BodyGyroJerkMag-stdDeviation]** |       numeric
-**[frequencyDomain-BodyAcc-mean-X]**  |               numeric
-**[frequencyDomain-BodyAcc-mean-Y]**  |               numeric
-**[frequencyDomain-BodyAcc-mean-Z]**  |               numeric
-**[frequencyDomain-BodyAcc-stdDeviation-X]**  |       numeric
-**[frequencyDomain-BodyAcc-stdDeviation-Y]**  |       numeric
-**[frequencyDomain-BodyAcc-stdDeviation-Z]**  |       numeric
-**[frequencyDomain-BodyAccJerk-mean-X]**  |           numeric
-**[frequencyDomain-BodyAccJerk-mean-Y]**  |           numeric
-**[frequencyDomain-BodyAccJerk-mean-Z]**  |           numeric
-**[frequencyDomain-BodyAccJerk-stdDeviation-X]**  |   numeric 
-**[frequencyDomain-BodyAccJerk-stdDeviation-Y]**  |   numeric
-**[frequencyDomain-BodyAccJerk-stdDeviation-Z]**  |   numeric
-**[frequencyDomain-BodyGyro-mean-X]** |               numeric
-**[frequencyDomain-BodyGyro-mean-Y]** |              numeric
-**[frequencyDomain-BodyGyro-mean-Z]** |               numeric
-**[frequencyDomain-BodyGyro-stdDeviation-X]** |       numeric
-**[frequencyDomain-BodyGyro-stdDeviation-Y]** |       numeric
-**[frequencyDomain-BodyGyro-stdDeviation-Z]** |       numeric
-**[frequencyDomain-BodyAccMag-mean]** |               numeric
-**[frequencyDomain-BodyAccMag-stdDeviation]** |       numeric
-**[frequencyDomain-BodyAccJerkMag-mean]** |           numeric
-**[frequencyDomain-BodyAccJerkMag-stdDeviation]** |   numeric
-**[frequencyDomain-BodyGyroMag-mean]**  |             numeric
-**[frequencyDomain-BodyGyroMag-stdDeviation]**  |     numeric
-**[frequencyDomain-BodyGyroJerkMag-mean]**  |         numeric
-**[frequencyDomain-BodyGyroJerkMag-stdDeviation]**  | numeric
+**subjectId** | integer
+**activityName**| factor
+**timeDomain-BodyAcceleration-mean-X**| numeric
+**timeDomain-BodyAcceleration-mean-Y**| numeric
+**timeDomain-BodyAcceleration-mean-Z**| numeric
+**timeDomain-BodyAcceleration-StdDeviation-X**| numeric
+**timeDomain-BodyAcceleration-StdDeviation-Y**| numeric
+**timeDomain-BodyAcceleration-StdDeviation-Z**| numeric
+**timeDomain-GravityAcceleration-mean-X**| numeric
+**timeDomain-GravityAcceleration-mean-Y**| numeric
+**timeDomain-GravityAcceleration-mean-Z**| numeric
+**timeDomain-GravityAcceleration-StdDeviation-X**| numeric
+**timeDomain-GravityAcceleration-StdDeviation-Y**| numeric
+**timeDomain-GravityAcceleration-StdDeviation-Z**| numeric
+**timeDomain-BodyAccelerationJerk-mean-X**| numeric
+**timeDomain-BodyAccelerationJerk-mean-Y**| numeric
+**timeDomain-BodyAccelerationJerk-mean-Z**| numeric
+**timeDomain-BodyAccelerationJerk-StdDeviation-X**| numeric
+**timeDomain-BodyAccelerationJerk-StdDeviation-Y**| numeric
+**timeDomain-BodyAccelerationJerk-StdDeviation-Z**| numeric
+**timeDomain-BodyGyroscope-mean-X**| numeric
+**timeDomain-BodyGyroscope-mean-Y**| numeric
+**timeDomain-BodyGyroscope-mean-Z**| numeric
+**timeDomain-BodyGyroscope-StdDeviation-X**| numeric
+**timeDomain-BodyGyroscope-StdDeviation-Y**| numeric
+**timeDomain-BodyGyroscope-StdDeviation-Z**| numeric
+**timeDomain-BodyGyroscopeJerk-mean-X**| numeric
+**timeDomain-BodyGyroscopeJerk-mean-Y**| numeric
+**timeDomain-BodyGyroscopeJerk-mean-Z**| numeric
+**timeDomain-BodyGyroscopeJerk-StdDeviation-X**| numeric
+**timeDomain-BodyGyroscopeJerk-StdDeviation-Y**| numeric
+**timeDomain-BodyGyroscopeJerk-StdDeviation-Z**| numeric
+**timeDomain-BodyAccelerationMagnitude-mean**| numeric
+**timeDomain-BodyAccelerationMagnitude-StdDeviation**| numeric
+**timeDomain-GravityAccelerationMagnitude-mean**| numeric
+**timeDomain-GravityAccelerationMagnitude-StdDeviation**| numeric
+**timeDomain-BodyAccelerationJerkMagnitude-mean**| numeric
+**timeDomain-BodyAccelerationJerkMagnitude-StdDeviation**| numeric
+**timeDomain-BodyGyroscopeMagnitude-mean**| numeric
+**timeDomain-BodyGyroscopeMagnitude-StdDeviation**| numeric
+**timeDomain-BodyGyroscopeJerkMagnitude-mean**| numeric
+**timeDomain-BodyGyroscopeJerkMagnitude-StdDeviation**| numeric
+**frequencyDomain-BodyAcceleration-mean-X**| numeric
+**frequencyDomain-BodyAcceleration-mean-Y** | numeric
+**frequencyDomain-BodyAcceleration-mean-Z**| numeric
+**frequencyDomain-BodyAcceleration-StdDeviation-X**| numeric
+**frequencyDomain-BodyAcceleration-StdDeviation-Y**| numeric
+**frequencyDomain-BodyAcceleration-StdDeviation-Z**| numeric
+**frequencyDomain-BodyAcceleration-meanFreq-X**| numeric
+**frequencyDomain-BodyAcceleration-meanFreq-Y**| numeric
+**frequencyDomain-BodyAcceleration-meanFreq-Z**| numeric
+**frequencyDomain-BodyAccelerationJerk-mean-X**| numeric
+**frequencyDomain-BodyAccelerationJerk-mean-Y**| numeric
+**frequencyDomain-BodyAccelerationJerk-mean-Z**| numeric
+**frequencyDomain-BodyAccelerationJerk-StdDeviation-X**| numeric
+**frequencyDomain-BodyAccelerationJerk-StdDeviation-Y**| numeric
+**frequencyDomain-BodyAccelerationJerk-StdDeviation-Z**| numeric
+**frequencyDomain-BodyAccelerationJerk-meanFreq-X**| numeric
+**frequencyDomain-BodyAccelerationJerk-meanFreq-Y**| numeric
+**frequencyDomain-BodyAccelerationJerk-meanFreq-Z**| numeric
+**frequencyDomain-BodyGyroscope-mean-X**| numeric
+**frequencyDomain-BodyGyroscope-mean-Y**| numeric
+**frequencyDomain-BodyGyroscope-mean-Z**| numeric
+**frequencyDomain-BodyGyroscope-StdDeviation-X**| numeric
+**frequencyDomain-BodyGyroscope-StdDeviation-Y**| numeric
+**frequencyDomain-BodyGyroscope-StdDeviation-Z**| numeric
+**frequencyDomain-BodyGyroscope-meanFreq-X**| numeric
+**frequencyDomain-BodyGyroscope-meanFreq-Y**| numeric
+**frequencyDomain-BodyGyroscope-meanFreq-Z**| numeric
+**frequencyDomain-BodyAccelerationMagnitude-mean**| numeric
+**frequencyDomain-BodyAccelerationMagnitude-StdDeviation**| numeric
+**frequencyDomain-BodyAccelerationMagnitude-meanFreq**| numeric
+**frequencyDomain-BodyAccelerationJerkMagnitude-mean**| numeric
+**frequencyDomain-BodyAccelerationJerkMagnitude-StdDeviation**| numeric
+**frequencyDomain-BodyAccelerationJerkMagnitude-meanFreq**| numeric
+**frequencyDomain-BodyGyroscopeMagnitude-mean**| numeric
+**frequencyDomain-BodyGyroscopeMagnitude-StdDeviation**
+**frequencyDomain-BodyGyroscopeMagnitude-meanFreq**| numeric
+**frequencyDomain-BodyGyroscopeJerkMagnitude-mean**| numeric
+**frequencyDomain-BodyGyroscopeJerkMagnitude-StdDeviation**| numeric
+**frequencyDomain-BodyGyroscopeJerkMagnitude-meanFreq**| numeric
 
 There are no Missing Values.
