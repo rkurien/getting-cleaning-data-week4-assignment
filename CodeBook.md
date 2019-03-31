@@ -54,12 +54,12 @@ Number of variables | 81
 There are 30 subjects who performed the activity
 
 The activities performed are as follows:-
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
 
 **Tidy Data Summary Table**
