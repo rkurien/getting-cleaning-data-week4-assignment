@@ -41,10 +41,26 @@ The **run_analysis.R** script creates a tidy data set named **tidyData.txt**
 ## Tidy Data Output - tidyData.txt
 
 ### Summary
+
+tidydata.txt is an independent tidy data set with the average of each variable for each activity and each subject from the original training and test data. Only the mean and standard deviation data is included and other data is omitted as per requirements of the project.
+
 Feature | Result
 ------------ | -------------
 Number of observations | 180
 Number of variables | 68
+
+### Description
+
+There are 30 subjects who performed the activity
+
+The activities performed are as follows:-
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
 
 **Tidy Data Summary Table**
 
@@ -69,56 +85,54 @@ Variable | Class
 **[timeDomain-BodyAccJerk-mean-Z]** | numeric
 **[timeDomain-BodyAccJerk-stdDeviation-X]** | numeric
 **[timeDomain-BodyAccJerk-stdDeviation-Y]** |         numeric
-**[timeDomain-BodyAccJerk-stdDeviation-Z]**          numeric
-**[timeDomain-BodyGyro-mean-X]**                     numeric
-**[timeDomain-BodyGyro-mean-Y]**                     numeric
-**[timeDomain-BodyGyro-mean-Z]**                     numeric 
-**[timeDomain-BodyGyro-stdDeviation-X]**             numeric 
-**[timeDomain-BodyGyro-stdDeviation-Y]**             numeric
-**[timeDomain-BodyGyro-stdDeviation-Z]**             numeric
-**[timeDomain-BodyGyroJerk-mean-X]**                 numeric
-**[timeDomain-BodyGyroJerk-mean-Y]**                 numeric
-**[timeDomain-BodyGyroJerk-mean-Z]**                 numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-X]**         numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-Y]**         numeric
-**[timeDomain-BodyGyroJerk-stdDeviation-Z]**         numeric
-**[timeDomain-BodyAccMag-mean]**                     numeric
-**[timeDomain-BodyAccMag-stdDeviation]**             numeric
-**[timeDomain-GravityAccMag-mean]**                  numeric
-**[timeDomain-GravityAccMag-stdDeviation]**          numeric
-**[timeDomain-BodyAccJerkMag-mean]**                 numeric
-**[timeDomain-BodyAccJerkMag-stdDeviation]**         numeric
-**[timeDomain-BodyGyroMag-mean]**                    numeric
-**[timeDomain-BodyGyroMag-stdDeviation]**            numeric
-**[timeDomain-BodyGyroJerkMag-mean]**                numeric
-**[timeDomain-BodyGyroJerkMag-stdDeviation]**        numeric
-**[frequencyDomain-BodyAcc-mean-X]**                 numeric
-**[frequencyDomain-BodyAcc-mean-Y]**                 numeric
-**[frequencyDomain-BodyAcc-mean-Z]**                 numeric
-**[frequencyDomain-BodyAcc-stdDeviation-X]**         numeric
-**[frequencyDomain-BodyAcc-stdDeviation-Y]**         numeric
-**[frequencyDomain-BodyAcc-stdDeviation-Z]**         numeric
-**[frequencyDomain-BodyAccJerk-mean-X]**             numeric
-**[frequencyDomain-BodyAccJerk-mean-Y]**             numeric
-**[frequencyDomain-BodyAccJerk-mean-Z]**             numeric
-**[frequencyDomain-BodyAccJerk-stdDeviation-X]**     numeric 
-**[frequencyDomain-BodyAccJerk-stdDeviation-Y]**     numeric
-**[frequencyDomain-BodyAccJerk-stdDeviation-Z]**     numeric
-**[frequencyDomain-BodyGyro-mean-X]**                numeric
-**[frequencyDomain-BodyGyro-mean-Y]**                numeric
-**[frequencyDomain-BodyGyro-mean-Z]**                numeric
-**[frequencyDomain-BodyGyro-stdDeviation-X]**        numeric
-**[frequencyDomain-BodyGyro-stdDeviation-Y]**        numeric
-**[frequencyDomain-BodyGyro-stdDeviation-Z]**        numeric
-**[frequencyDomain-BodyAccMag-mean]**                numeric
-**[frequencyDomain-BodyAccMag-stdDeviation]**        numeric
-**[frequencyDomain-BodyAccJerkMag-mean]**            numeric
-**[frequencyDomain-BodyAccJerkMag-stdDeviation]**    numeric
-**[frequencyDomain-BodyGyroMag-mean]**               numeric
-**[frequencyDomain-BodyGyroMag-stdDeviation]**       numeric
-**[frequencyDomain-BodyGyroJerkMag-mean]**           numeric
-**[frequencyDomain-BodyGyroJerkMag-stdDeviation]**   numeric
-        
-      
-### Description
+**[timeDomain-BodyAccJerk-stdDeviation-Z]** |         numeric
+**[timeDomain-BodyGyro-mean-X]**  |                   numeric
+**[timeDomain-BodyGyro-mean-Y]**  |                   numeric
+**[timeDomain-BodyGyro-mean-Z]**  |                   numeric 
+**[timeDomain-BodyGyro-stdDeviation-X]**  |           numeric 
+**[timeDomain-BodyGyro-stdDeviation-Y]**  |           numeric
+**[timeDomain-BodyGyro-stdDeviation-Z]**  |           numeric
+**[timeDomain-BodyGyroJerk-mean-X]**  |               numeric
+**[timeDomain-BodyGyroJerk-mean-Y]**  |               numeric
+**[timeDomain-BodyGyroJerk-mean-Z]**  |               numeric
+**[timeDomain-BodyGyroJerk-stdDeviation-X]**  |       numeric
+**[timeDomain-BodyGyroJerk-stdDeviation-Y]**  |       numeric
+**[timeDomain-BodyGyroJerk-stdDeviation-Z]**  |       numeric
+**[timeDomain-BodyAccMag-mean]** |                     numeric
+**[timeDomain-BodyAccMag-stdDeviation]**  |           numeric
+**[timeDomain-GravityAccMag-mean]** |                 numeric
+**[timeDomain-GravityAccMag-stdDeviation]** |         numeric
+**[timeDomain-BodyAccJerkMag-mean]** |               numeric
+**[timeDomain-BodyAccJerkMag-stdDeviation]**  |       numeric
+**[timeDomain-BodyGyroMag-mean]** |                   numeric
+**[timeDomain-BodyGyroMag-stdDeviation]** |           numeric
+**[timeDomain-BodyGyroJerkMag-mean]** |               numeric
+**[timeDomain-BodyGyroJerkMag-stdDeviation]** |       numeric
+**[frequencyDomain-BodyAcc-mean-X]**  |               numeric
+**[frequencyDomain-BodyAcc-mean-Y]**  |               numeric
+**[frequencyDomain-BodyAcc-mean-Z]**  |               numeric
+**[frequencyDomain-BodyAcc-stdDeviation-X]**  |       numeric
+**[frequencyDomain-BodyAcc-stdDeviation-Y]**  |       numeric
+**[frequencyDomain-BodyAcc-stdDeviation-Z]**  |       numeric
+**[frequencyDomain-BodyAccJerk-mean-X]**  |           numeric
+**[frequencyDomain-BodyAccJerk-mean-Y]**  |           numeric
+**[frequencyDomain-BodyAccJerk-mean-Z]**  |           numeric
+**[frequencyDomain-BodyAccJerk-stdDeviation-X]**  |   numeric 
+**[frequencyDomain-BodyAccJerk-stdDeviation-Y]**  |   numeric
+**[frequencyDomain-BodyAccJerk-stdDeviation-Z]**  |   numeric
+**[frequencyDomain-BodyGyro-mean-X]** |               numeric
+**[frequencyDomain-BodyGyro-mean-Y]** |              numeric
+**[frequencyDomain-BodyGyro-mean-Z]** |               numeric
+**[frequencyDomain-BodyGyro-stdDeviation-X]** |       numeric
+**[frequencyDomain-BodyGyro-stdDeviation-Y]** |       numeric
+**[frequencyDomain-BodyGyro-stdDeviation-Z]** |       numeric
+**[frequencyDomain-BodyAccMag-mean]** |               numeric
+**[frequencyDomain-BodyAccMag-stdDeviation]** |       numeric
+**[frequencyDomain-BodyAccJerkMag-mean]** |           numeric
+**[frequencyDomain-BodyAccJerkMag-stdDeviation]** |   numeric
+**[frequencyDomain-BodyGyroMag-mean]**  |             numeric
+**[frequencyDomain-BodyGyroMag-stdDeviation]**  |     numeric
+**[frequencyDomain-BodyGyroJerkMag-mean]**  |         numeric
+**[frequencyDomain-BodyGyroJerkMag-stdDeviation]**  | numeric
 
+There are no Missing Values.
