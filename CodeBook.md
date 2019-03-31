@@ -142,7 +142,7 @@ Variable | Class
 **frequencyDomain-BodyAccelerationJerkMagnitude-StdDeviation**| numeric
 **frequencyDomain-BodyAccelerationJerkMagnitude-meanFreq**| numeric
 **frequencyDomain-BodyGyroscopeMagnitude-mean**| numeric
-**frequencyDomain-BodyGyroscopeMagnitude-StdDeviation**
+**frequencyDomain-BodyGyroscopeMagnitude-StdDeviation** | numeric
 **frequencyDomain-BodyGyroscopeMagnitude-meanFreq**| numeric
 **frequencyDomain-BodyGyroscopeJerkMagnitude-mean**| numeric
 **frequencyDomain-BodyGyroscopeJerkMagnitude-StdDeviation**| numeric
