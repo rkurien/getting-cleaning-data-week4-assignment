@@ -68,7 +68,7 @@ Variable | Class
 **[timeDomain-BodyAccJerk-mean-Y]** | numeric
 **[timeDomain-BodyAccJerk-mean-Z]** | numeric
 **[timeDomain-BodyAccJerk-stdDeviation-X]** | numeric
-**[timeDomain-BodyAccJerk-stdDeviation-Y]**          numeric
+**[timeDomain-BodyAccJerk-stdDeviation-Y]** |         numeric
 **[timeDomain-BodyAccJerk-stdDeviation-Z]**          numeric
 **[timeDomain-BodyGyro-mean-X]**                     numeric
 **[timeDomain-BodyGyro-mean-Y]**                     numeric
