@@ -5,7 +5,7 @@ Week 4 assignment
 
 ### Step 1: Download the original dataset and unzip the downloaded file.
 
-Data is now in a folder named **UCI HAR Dataset**
+Data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The downloaded zip file was unzipped. Data is now in a folder named **UCI HAR Dataset**
 
 ### Step 2: Read all data files using read.table()
 
@@ -25,9 +25,9 @@ Added appropriate column names to all loaded data
 
 ### Step 3: As per project requirement, merge all data into single dataset
 
-Training data set consisting of 3 files were merged into one (**training_dataset**) using cbind
-Test data set consisting of 3 files were merged into one (**test_dataset**) using cbind
-Both the above were merged usign rbind to form a single dataset named **masterdata**
+Training data set consisting of 3 files were merged into one (**training_dataset**) using *cbind*
+Test data set consisting of 3 files were merged into one (**test_dataset**) using *cbind*
+Both the above were merged usign *rbind* to form a single dataset named **masterdata**
 
 ### Step 4: Extract required data on mean and standard deviation as per project requirement
 
@@ -40,9 +40,9 @@ Descriptive variable/column names were given for the **mstd_data**
 
 ### Step 5: Independent tidy data set **tidyData** was created
 
-Independent tidy data set was created by calculation mean of all measurements for each subject and each activity. The aggregate() was used for calculation, followed by arrange to group and order the same.
+Independent tidy data set was created by calculation mean of all measurements for each subject and each activity. The *aggregate()* was used for calculation, followed by *arrange()* to group and order the same.
 
-The data in tidyData set was used to create the final tidy data file named 'tidydata.txt'
+The data in tidyData set was used to create the final tidy data file named **'tidydata.txt'**
 
 
 
